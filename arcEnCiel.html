@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+    <div id="arcenciel">
+        <p><span id="arc">ARC </span><span id="en">EN </span><span id="ciel">CIEL </span></p>
+    </div>
+    <script>
+        // body.style.backgroundColor = "black";
+        var arcenciel = document.getElementById("arcenciel");
+        arcenciel.style.textAlign = "center";
+        arcenciel.style.width = "100%";
+        arcenciel.style.fontSize = "300px";
+        document.addEventListener("keypress", function changeColor() {
+            arc.style.color = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+            en.style.color = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+            ciel.style.color = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+            document.body.style.backgroundColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+
+        });
+        document.addEventListener("click", function changeColor() {
+            arcenciel.style.userSelect = "none";
+            arc.style.color = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+            en.style.color = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+            ciel.style.color = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+            document.body.style.backgroundColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+
+        });
+    </script>
+</body>
+</html>
